@@ -1,0 +1,246 @@
+<div class="cat__filter__mob">
+    <button class="cat__filter__mob__btn" data-bs-toggle="offcanvas" data-bs-target="#filterBox">
+        <span class="cat__filter__mob__btn__caption">Фильтры</span>
+        <span class="ico-green">
+            <svg width="20" height="20">
+                <use xlink:href="#svg-filter"></use>
+            </svg>
+        </span>
+    </button>
+</div>
+
+<div class="offcanvas-lg offcanvas-start" tabindex="-1" id="filterBox">
+    <div class="mob-menu-modal__header offcanvas-header">
+        <div class="container">
+            <div class="mob-menu-modal__header__wrap">
+                <div class="mob-menu-modal__header__title">
+                    Фильтры
+                </div>
+
+                <div class="btn-close2" data-bs-toggle="offcanvas" data-bs-target="#filterBox">
+                    <svg width="20" height="20">
+                        <use xlink:href="#svg-close2"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas-body">
+        <div class="container">
+
+            <div class="cat__filter-col">
+                <div class="cat__filter">
+
+                    <div class="cat__filter__body accordion">
+                        <div class="cat__filter__item">
+                            <div class="cat__filter__item__header" data-bs-toggle="collapse"
+                                 data-bs-target="#collapseOne">
+                                <span class="cat__filter__item__title">Цена, руб.</span>
+                                <span class="cat__filter__item__btn">
+                                    <svg width="12" height="6">
+                                        <use xlink:href="#svg-up"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show">
+                                <div class="cat__filter__item__body cat__filter__range">
+                                    <div class="d-flex cat__filter__range__row">
+                                        <div class="cat__filter__range__col">
+                                            <label for="priceMin" class="cat__filter__range__inp__label">от</label>
+                                            <input type="text"
+                                                   class="cat__filter__range__inp"
+                                                   id="priceMin"
+                                                   autocomplete="off"
+                                                   onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+                                            >
+                                        </div>
+                                        <span class="cat__filter__range__sep"></span>
+                                        <div class="cat__filter__range__col">
+                                            <label for="priceMin" class="cat__filter__range__inp__label">до</label>
+                                            <input type="text"
+                                                   class="cat__filter__range__inp"
+                                                   id="priceMax"
+                                                   autocomplete="off"
+                                                   onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="cat__filter__range__footer">
+                                        <div class="js_range_filter"
+                                             data-max="100000"
+                                             data-min="10"
+                                             data-step="1000"
+                                             data-idmax="priceMax"
+                                             data-idmin="priceMin"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="cat__filter__item">
+                            <div class="cat__filter__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#collapse2">
+                                <span class="cat__filter__item__title">Производитель</span>
+                                <span class="cat__filter__item__btn">
+                                    <svg width="12" height="6">
+                                        <use xlink:href="#svg-up"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div id="collapse2" class="accordion-collapse collapse ">
+                                <div class="cat__filter__item__body">
+                                    <ul class="nav d-block cat__filter__item__chekbox">
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+
+
+                                        <li class="d-none">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li class="d-none">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                    <div class="cat__filter__item__footer">
+                                        <a class="js-more-props">Показать еще</a>
+                                    </div>
+                                </div>
+                                <a href="" class="cat__filter__res" style="top: 60px">
+                                    ПОКАЗАТЬ: 120
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cat__filter__item">
+                            <div class="cat__filter__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#collapse3">
+                                <span class="cat__filter__item__title">Высота, мм</span>
+                                <span class="cat__filter__item__btn">
+                                    <svg width="12" height="6">
+                                        <use xlink:href="#svg-up"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div id="collapse3" class="accordion-collapse collapse ">
+                                <div class="cat__filter__item__body">
+                                    <ul class="nav d-block cat__filter__item__chekbox">
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+
+
+                                        <li class="d-none">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+                                        <li class="d-none">
+                                            <label class="custom-checkbox">
+                                                <input type="checkbox" name="1">
+                                                <span class="custom-checkbox__value">
+                                        Abat
+                                    </span>
+                                            </label>
+                                        </li>
+
+                                    </ul>
+                                    <div class="cat__filter__item__footer">
+                                        <a class="js-more-props">Показать еще</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cat__filter__footer">
+                        <div class="container ">
+                            <div class="cat__filter__footer__wrap">
+                                <button type="submit" class="btn cat__filter__submit" id="filterSubmit" data-bs-target="#filterBox">Применить</button>
+                                <button type="reset" class="btn cat__filter__reset" id="filterReset" data-bs-target="#filterBox">
+                                    <svg width="9" height="9" class="me-2">
+                                        <use xlink:href="#svg-close"></use>
+                                    </svg>
+                                    <span>Сбросить <span class="cat__filter__reset__only-pc">фильтры</span></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
