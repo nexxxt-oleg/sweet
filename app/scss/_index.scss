@@ -948,10 +948,15 @@ a {
   padding-bottom: 30px;
 }
 
-
-
-@media screen and (min-width: 769px) {
-
-
+.header__col-mob-btn {
+  display: none;
 }
 
+.header__nav__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header__mob__marketplace {
+  display: none;
+}
