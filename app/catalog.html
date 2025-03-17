@@ -1,0 +1,306 @@
+<!--#set var="title" value="Каталог" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="container catalog-page">
+
+    <div class="row catalog-page__header">
+        <div class="col-lg-7">
+            <h1>Каталог</h1>
+        </div>
+        <div class="col-lg-5">
+            <span class="catalog-page__header__slogan">Светодиодные лампы Наносвет</span>
+        </div>
+        <div class="col-12 catalog-page__mob-filter">
+            <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasFilter">
+                <span>
+                    Фильтры
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="offcanvas-lg offcanvas-start" id="offcanvasFilter">
+        <div class="catalog-page__filters">
+            <form action="">
+                <div class="catalog-page__filters__list" id="accordionFilter">
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params1">
+                            <div class="catalog-page__filters__item__header__mob-label">Форма</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter1" placeholder="Форма"
+                                       value="">
+                                <label for="filter1">Форма</label>
+                            </div>
+                        </div>
+                        <div class="catalog-page__filters__item__body">
+                            <div class="accordion-collapse collapse " id="filter_params1"
+                                 data-bs-parent="#accordionFilter">
+                                <ul class=" nav">
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params1">
+                                            <input type="radio" value="Таблетка" name="filter_params1"
+                                                   onchange="changeFilter('Таблетка', 'filter1')">
+                                            <span>Таблетка</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params1">
+                                            <input type="radio" value="Таблетка2" name="filter_params1"
+                                                   onchange="changeFilter('Таблетка2', 'filter1')">
+                                            <span>Таблетка2</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params1">
+                                            <input type="radio" value="Таблетка3" name="filter_params1"
+                                                   onchange="changeFilter('Таблетка3', 'filter1')">
+                                            <span>Таблетка3</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params2">
+                            <div class="catalog-page__filters__item__header__mob-label">Цоколь</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter2" placeholder="Форма"
+                                       value="">
+                                <label for="filter2">Цоколь</label>
+                            </div>
+                        </div>
+                        <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params2"
+                             data-bs-parent="#accordionFilter">
+                            <ul class="nav">
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params2">
+                                        <input type="radio" value="Таблетка" name="filter_params2"
+                                               onchange="changeFilter('GX53', 'filter2')">
+                                        <span>Таблетка</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params2">
+                                        <input type="radio" value="Таблетка2" name="filter_params2"
+                                               onchange="changeFilter('GX532', 'filter2')">
+                                        <span>Таблетка2</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params2">
+                                        <input type="radio" value="Таблетка3" name="filter_params2"
+                                               onchange="changeFilter('GX533', 'filter2')">
+                                        <span>Таблетка3</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params3">
+                            <div class="catalog-page__filters__item__header__mob-label">Цвет свечения</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter3"
+                                       placeholder="Цвет свечения"
+                                       value="">
+                                <label for="filter3">Цвет свечения</label>
+                            </div>
+                        </div>
+                        <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params3"
+                             data-bs-parent="#accordionFilter">
+                            <ul class="nav">
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params3">
+                                        <input type="radio" value="Таблетка" name="filter_params3"
+                                               onchange="changeFilter('Белый', 'filter3')">
+                                        <span>Белый</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params3">
+                                        <input type="radio" value="Таблетка3" name="filter_params3"
+                                               onchange="changeFilter('Красный', 'filter3')">
+                                        <span>Красный</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params3">
+                                        <input type="radio" value="Таблетка3" name="filter_params3"
+                                               onchange="changeFilter('Красный3', 'filter3')">
+                                        <span>Красный3</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params4">
+                            <div class="catalog-page__filters__item__header__mob-label">Цвет свечения</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter4" placeholder="Мощность, Вт"
+                                       value="">
+                                <label for="filter4">Мощность, Вт</label>
+                            </div>
+                        </div>
+                        <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params4"
+                             data-bs-parent="#accordionFilter">
+                            <ul class="nav">
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params4">
+                                        <input type="radio" value="Таблетка" name="filter_params4"
+                                               onchange="changeFilter('6 Вт', 'filter4')">
+                                        <span>6 Вт</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params4">
+                                        <input type="radio" value="7 Вт" name="filter_params4"
+                                               onchange="changeFilter('7 Вт', 'filter4')">
+                                        <span>7 Вт</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params5">
+                            <div class="catalog-page__filters__item__header__mob-label">Световой поток,Лм</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter5"
+                                       placeholder="Световой поток,Лм" value="">
+                                <label for="filter5">Световой поток,Лм</label>
+                            </div>
+                        </div>
+                        <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params5"
+                             data-bs-parent="#accordionFilter">
+                            <ul class="nav">
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params5">
+                                        <input type="radio" value="Таблетка" name="filter_params5"
+                                               onchange="changeFilter('1000', 'filter5')">
+                                        <span>1000</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params5">
+                                        <input type="radio" value="7 Вт" name="filter_params5"
+                                               onchange="changeFilter('1500', 'filter5')">
+                                        <span>1500</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-page__filters__item accordion-item">
+                        <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                             data-bs-target="#filter_params6">
+                            <div class="catalog-page__filters__item__header__mob-label">Диммируемая</div>
+                            <div class="form-floating">
+                                <input type="text" readonly class="form-control" id="filter6" placeholder="Диммируемая"
+                                       value="">
+                                <label for="filter6">Диммируемая</label>
+                            </div>
+                        </div>
+                        <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params6"
+                             data-bs-parent="#accordionFilter">
+                            <ul class="nav">
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params6">
+                                        <input type="radio" value="Таблетка" name="filter_params6"
+                                               onchange="changeFilter('1000', 'filter6')">
+                                        <span>1000</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                           data-bs-target="#filter_params6">
+                                        <input type="radio" value="7 Вт" name="filter_params6"
+                                               onchange="changeFilter('1500', 'filter6')">
+                                        <span>1500</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-page__filters__footer">
+                    <a href="" class="catalog-page__filters__clear">
+                        <svg width="14" height="14">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                        Сбросить все
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row catalog-page__body">
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product2.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product2.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product2.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product3.html" -->
+        </div>
+        <div class="col-xl-3 cpl-lg-4 col-6 fpad50">
+            <!--#include virtual="/parts/item-product2.html" -->
+        </div>
+    </div>
+
+    <div class="text catalog-page__seo row align-items-center">
+        <div class="col-lg-6">
+            <h2>Светодиодные лампы
+                Наносвет</h2>
+            <p>Светодиодные лампы Наносвет представляют собой идеальное сочетание инновационных технологий и
+                продуманного дизайна, обеспечивая непревзойденное качество освещения для любого интерьера. Наши лампы,
+                благодаря своей энергоэффективности, значительно снижают расход электроэнергии, позволяя экономить на
+                счетах за электричество. Внедрение передовых светодиодов гарантирует длительный срок службы продукта,
+                что позволяет пользователям наслаждаться комфортом и надежностью на протяжении многих лет.</p>
+            <p>Наносвет предлагает широкий ассортимент моделей, которые легко впишутся в любой стиль — от классического
+                до современного. Каждый элемент создан с вниманием к деталям, что делает их не только функциональными,
+                но и эстетически привлекательными. При этом использование безопасных материалов обеспечивает
+                экологичность и минимальное воздействие на окружающую среду.</p>
+            <p>Светодиодные лампы Наносвет — это не просто источник света, это элемент, который создает атмосферу,
+                наполняя пространство теплом и уютом.</p>
+        </div>
+        <div class="col-lg-6">
+            <div class="d-flex justify-content-center">
+                <img src="images/dist/sweet5.png" width="373" height="500" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
