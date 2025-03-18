@@ -227,9 +227,41 @@
   .catalog-page__filters__list {
     display: block;
   }
+  .catalog-page__filters__footer {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: #fff;
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0;
+    box-shadow: 0px -4px 5px 0px rgba(91, 91, 91, 0.1);
+    .catalog-page__filters__clear {
+      width: calc(50% - 8px);
+      height: 45px;
+      border-radius: 23px;
+      background: #f5f5f5;
+      justify-content: center;
+      font-size: 14px;
+      color: #000;
+      svg {
+        display: none;
+      }
+    }
+  }
+  .catalog-page__filters__footer__mob-submit {
+    display: block;
+    width: calc(50% - 8px);
+  }
 
   .catalog-page__filters {
     padding: 20px 12px;
+    height: calc(100vh - 100px);
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .catalog-page__filters__item {
     border-bottom: 1px solid #000;
@@ -311,6 +343,19 @@
   .catalog-page__filters__item__header:not(.collapsed)  {
     .catalog-page__filters__item__header__mob-label::after {
       transform: rotate(-180deg);
+    }
+  }
+  .catalog-page__filters__mod-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    color: #000;
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
     }
   }
 }
@@ -425,6 +470,10 @@
 }
 
 @media screen and (max-width: 574px) {
+  #offcanvasFilter {
+    width: 100%;
+    border-right: none;
+  }
   .footer__copy,
   .footer__web,
   .footer__link {
