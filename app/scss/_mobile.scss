@@ -45,6 +45,21 @@
 }
 
 @media screen and (max-width: 991px) {
+  .page-wrap .breadcrumb {
+    margin-top: 0;
+  }
+  .news__item__desc {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .news-item__date {
+    font-size: 14px;
+  }
   .page-wrap {
     padding-top: 75px;
     padding-bottom: 50px;
@@ -525,6 +540,25 @@
 
 
 @media screen and (max-width: 768px) {
+  .breadcrumb {
+    padding-bottom: 15px;
+  }
+  .single-news__header h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .single-news__header {
+    padding-bottom: 15px;
+  }
+  .single-news__date {
+    font-size: 14px;
+  }
+  .news__item {
+    margin-bottom: 40px;
+  }
+  .news__item__desc {
+    padding-top: 15px;
+  }
   .form-box__item {
     padding-bottom: 20px;
   }
