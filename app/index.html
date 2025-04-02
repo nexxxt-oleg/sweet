@@ -2,13 +2,21 @@
 <!--#include virtual="/parts/header.html" -->
 
 <section class="panel section1">
-    <div class="container">
+    <div id="scene1" class="scene">
+        <div data-depth="0.50">
+            <picture>
+                <source srcset="images/dist/bg1.jpg 1x, images/dist/bg1@2.jpg 2x">
+                <img src="images/dist/bg1.jpg" loading="lazy" alt="">
+            </picture>
+        </div>
+    </div>
+    <div class="container position-relative z-3">
         <div class="section1__wrap">
-            <h1>
+            <h1 class="wow2 animate__fadeIn">
                 Высочайшее
                 <span>качество света</span>
             </h1>
-            <p>Энергосберегающие и светодиодные лампы<br>
+            <p class="wow2 animate__fadeIn">Энергосберегающие и светодиодные лампы<br>
                 Наносвет</p>
         </div>
     </div>
@@ -18,15 +26,15 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="offset-xl-2 offset-lg-1 offset-0 col-lg-6">
-                <h2>Безупречный<br>
+                <h2 class="wow2 animate__fadeIn">Безупречный<br>
                     свет
                 </h2>
-                <p>Высокая яркость и естественная<br>
+                <p class="wow2 animate__fadeIn">Высокая яркость и естественная<br>
                     передача цветов</p>
-                <div class="section2__params">
+                <div class="section2__params wow2 animate__fadeIn">
                     <span>CRI > </span>90
                 </div>
-                <a href="" class="btn-test">
+                <a href="" class="btn-test wow2 animate__fadeIn">
                     <span class="btn-test__text">
                         <span class="btn-test__label">Протестировано на</span>
                         <span class="btn-test__site">lamptest.ru</span>
@@ -39,7 +47,7 @@
                     </span>
                 </a>
             </div>
-            <div class="col-lg-4 section2__img">
+            <div class="col-lg-4 section2__img wow2 animate__fadeIn">
                 <picture>
                     <source media="(max-width: 991px)" srcset="images/dist/sweet2_mob.png">
                     <source media="(min-width: 992px)" srcset="images/dist/sweet2.png 1x, images/dist/sweet2@2.png 2x">
@@ -53,9 +61,15 @@
 <div class="panel-top section3"></div>
 <section class="panel section3">
     <div class="container position-relative">
+        <div class="section3__after wow2 animate__fadeIn">
+            <img src="images/dist/sweet3_1.png" width="334" height="335" alt="" loading="lazy">
+        </div>
+        <div class="section3__before wow2 animate__fadeIn">
+            <img src="images/dist/sweet3_2.png" width="397" height="248" alt="" loading="lazy">
+        </div>
         <div class="row align-items-end ">
             <div class="col-lg-6 col-xl-5 offset-xl-1 offset-lg-0">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center wow2 animate__fadeIn">
                     <picture>
                         <source media="(min-width: 768px)"
                                 srcset="images/dist/sweet3.png 1x, images/dist/sweet3@2.png 2x">
@@ -65,19 +79,21 @@
             </div>
             <div class="col-lg-6 col-xl-5 section3__col-desc">
                 <div class="section3__desc">
-                    <h2>Длительный
+                    <h2 class="wow2 animate__fadeIn">Длительный
                         срок
                         эксплуатации
                     </h2>
-                    <p>Срок службы ламп Наносвет достигает
-                        <b class="text-nowrap">25 000 часов</b>, что в переводе на понятные
-                        цифры означает <b class="text-nowrap">≈ 13 лет*</b><br>
-                        <small>(при использовании до 5 часов в день)</small>
-                    </p>
-                    <p>Гарантия на продукцию компании Наносвет
-                        действует в течение <b>двух лет</b>, обеспечивая
-                        надежность и уверенность в каждом
-                        приобретенном изделии</p>
+                    <div class="wow2 animate__fadeIn">
+                        <p>Срок службы ламп Наносвет достигает
+                            <b class="text-nowrap">25 000 часов</b>, что в переводе на понятные
+                            цифры означает <b class="text-nowrap">≈ 13 лет*</b><br>
+                            <small>(при использовании до 5 часов в день)</small>
+                        </p>
+                        <p>Гарантия на продукцию компании Наносвет
+                            действует в течение <b>двух лет</b>, обеспечивая
+                            надежность и уверенность в каждом
+                            приобретенном изделии</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,21 +105,21 @@
         <div class="row justify-content-center">
             <div class="col-xl-7 col-lg-8">
                 <div class="compact-desc">
-                    <h2>
+                    <h2 class="wow2 animate__fadeIn">
                         Компактность
                     </h2>
-                    <p>Все лампы Наносвет максимально приближены<br>
+                    <p class="wow2 animate__fadeIn">Все лампы Наносвет максимально приближены<br>
                         по размерам к соответствующим<br>
                         лампам накаливания</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="compact-line">
+    <div class="compact-line wow2 animate__fadeIn">
     </div>
     <div class="container">
         <div class="slider-box">
-            <div class="slider-box__title">
+            <div class="slider-box__title wow2 animate__fadeIn">
                 ПРОДУКЦИЯ НАНОСВЕТ
             </div>
             <div class="slider-box__wrap">
@@ -137,7 +153,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="slider-box__footer">
+            <div class="slider-box__footer wow2 animate__fadeIn">
                 <a href="" class="btn"><span>ПЕРЕЙТИ В КАТАЛОГ</span></a>
             </div>
         </div>
@@ -146,18 +162,21 @@
 
     </div>
 
-    <div class="marketplace">
-        <div class="container">
-            <div class="marketplace__desc">
+    <div class="marketplace overflow-hidden">
+        <div class="container position-relative">
+            <div id="scene2" class="marketplace__bg">
+                <div class="marketplace__bg__wrap" data-depth="0.50"></div>
+            </div>
+            <div class="marketplace__desc position-relative z-3 wow2 animate__fadeIn">
                 <h2>Где купить</h2>
                 <p>Наша продукция представлена<br>
                     на маркетплейсах и в крупнейших<br>
                     интернет-магазинах</p>
             </div>
-            <div class="row">
+            <div class="row position-relative z-3">
                 <div class="col-lg-8">
                     <div class="marketplace__list">
-                        <a href="" class="marketplace__item" target="_blank">
+                        <a href="" class="marketplace__item wow2 animate__fadeIn" target="_blank">
                             <div class="marketplace__item__img ozon">
                                 <svg width="220" height="48" xmlns="http://www.w3.org/2000/svg"
                                      viewBox="0 0 750 163.63">
@@ -181,7 +200,7 @@
                                 <span>рейтинг товаров</span>
                             </div>
                         </a>
-                        <a href="" class="marketplace__item" target="_blank">
+                        <a href="" class="marketplace__item wow2 animate__fadeIn" target="_blank">
                             <div class="marketplace__item__img wb">
                                 <svg width="220" height="33" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 32">
                                     <path fill="#fff" stroke-width="0"
@@ -201,7 +220,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <a href="" class="marketplace__link" target="_blank">
+                    <a href="" class="marketplace__link wow2 animate__fadeIn" target="_blank">
                         <span><b>ПОКАЗАТЬ ЕЩЕ</b><br>
                         25 магазинов</span>
                     </a>
@@ -213,26 +232,28 @@
     <div class="container home-prim">
         <div class="row">
             <div class="col-lg-5">
-                <h2>НАДЕЖНЫЙ
+                <h2 class="wow2 animate__fadeIn">НАДЕЖНЫЙ
                     ПОСТАВЩИК</h2>
-                <div class="d-none d-xl-block d-lg-block">
-                    <a href="" class="btn">
+                <div class="d-none d-xl-block d-lg-block position-relative z-3">
+                    <a href="" class="btn wow2 animate__fadeIn">
                         <span>СОТРУДНИЧЕСТВО</span>
                     </a>
                 </div>
-                <div class="home-prim__img">
-                    <div class="home-prim__img__wrap">
-                        <picture>
-                            <source media="(min-width: 768px)"
-                                    srcset="images/dist/sweet4.jpg 1x, images/dist/sweet4@2.jpg 2x">
-                            <img src="images/dist/sweet4.jpg" width="646" height="430" alt="" loading="lazy">
-                        </picture>
+                <div class="home-prim__img position-relative z-1" >
+                    <div class="home-prim__img__wrap" id="scene3">
+                        <div class=" wow2 animate__fadeIn" data-depth="0.50">
+                            <picture>
+                                <source media="(min-width: 768px)"
+                                        srcset="images/dist/sweet4.jpg 1x, images/dist/sweet4@2.jpg 2x">
+                                <img src="images/dist/sweet4.jpg" width="646" height="430" alt="" loading="lazy">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7 position-relative Z-3">
                 <ul class="nav flex-column home-prim__list">
-                    <li class="home-prim__item">
+                    <li class="home-prim__item wow2 animate__fadeIn">
                         <div class="home-prim__item__ico">
                             <div class="ico-area">
                                 <svg width="15" height="24" xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +276,7 @@
                                 форматов.</p>
                         </div>
                     </li>
-                    <li class="home-prim__item">
+                    <li class="home-prim__item wow2 animate__fadeIn">
                         <div class="home-prim__item__ico">
                             <div class="ico-area">
                                 <svg width="23" height="24" xmlns="http://www.w3.org/2000/svg"
@@ -272,7 +293,7 @@
                                 индивидуальных клиентов, так и крупных организаций.</p>
                         </div>
                     </li>
-                    <li class="home-prim__item">
+                    <li class="home-prim__item wow2 animate__fadeIn">
                         <div class="home-prim__item__ico">
                             <div class="ico-area">
                                 ₽
@@ -285,7 +306,7 @@
                                 вложена с умом.</p>
                         </div>
                     </li>
-                    <li class="home-prim__item">
+                    <li class="home-prim__item wow2 animate__fadeIn">
                         <div class="home-prim__item__ico">
                             <div class="ico-area">
                                 <svg width="24" height="19" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456.12 351">
@@ -300,7 +321,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="home-prim__item__desc">
+                        <div class="home-prim__item__desc wow2 animate__fadeIn">
                             <h3>Быстрая логистика</h3>
                             <p>Сотрудничество с нами — это гарантия бесперебойных поставок высококачественного товара в
                                 необходимом объеме и точно в срок. Мы стремимся к совершенству, чтобы ваш бизнес

@@ -46,12 +46,12 @@ a {
     background-position: 50% 0;
     background-size: auto 100%;
     z-index: 1;
-    @include respond(mac) {
+   /* @include respond(mac) {
       background-image: url("../images/dist/bg1@2.jpg");
     }
     @include respond(tablet) {
       background-image: url("../images/dist/bg1.jpg");
-    }
+    }*/
 
     .container {
       padding-top: 100px;
@@ -283,37 +283,27 @@ a {
 }
 
 .section3 {
+  &__after {
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: -130px;
+  }
+
+  &__before {
+
+    position: absolute;
+    z-index: 1;
+    bottom: -70px;
+    right: -200px;
+  }
   .container {
     .row {
       position: relative;
       z-index: 20;
     }
 
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: 1;
-      top: -30px;
-      left: -130px;
-      width: 335px;
-      height: 336px;
-      background: url("../images/dist/sweet3_1.png") 0 0 no-repeat;
-      background-size: cover;
-    }
 
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: 1;
-      bottom: -70px;
-      right: -200px;
-      width: 397px;
-      height: 248px;
-      background: url("../images/dist/sweet3_2.png") 0 0 no-repeat;
-      background-size: cover;
-    }
   }
 }
 
@@ -457,6 +447,14 @@ a {
       height: 100%;
       object-fit: contain;
       object-position: center center;
+      transition: all 0.5s ease;
+      transform: scale(1);
+    }
+
+    &:hover {
+      picture img {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -612,8 +610,22 @@ a {
   .container {
     padding-top: 130px;
     padding-bottom: 130px;
-    background: url("../images/dist/bg-market.jpg") 95% 0 no-repeat;
-    background-size: 600px auto;
+
+  }
+  .marketplace__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &__wrap {
+      width: 100%;
+      height: 100%;
+      background: url("../images/dist/bg-market.jpg") 95% 0 no-repeat;
+      background-size: 600px auto;
+    }
   }
 
   &__desc {
@@ -738,7 +750,7 @@ a {
       }
 
       span {
-        color: #000;
+        color: #fff;
       }
     }
   }
@@ -856,8 +868,8 @@ a {
         text-decoration: none;
 
         &:hover {
-          color: #fff;
-          text-decoration: underline;
+          color: #b7b7b7;
+          text-decoration: none;
         }
       }
     }
@@ -871,7 +883,8 @@ a {
     font-weight: bold;
 
     &:hover {
-      text-decoration: underline;
+      color: #b7b7b7;
+      text-decoration: none;
     }
   }
 
@@ -883,6 +896,7 @@ a {
     font-weight: 500;
 
     &:hover {
+      color: #b7b7b7;
       text-decoration: none;
     }
   }
@@ -952,6 +966,10 @@ a {
     &__name {
       color: #fff;
       display: block;
+    }
+
+    &:hover {
+      color: #fff;
     }
   }
 
@@ -1736,6 +1754,14 @@ a:hover {
     }
   }
 }
+.scene {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .panel-top.section5 {
   background: #efeff0;
@@ -1766,6 +1792,92 @@ a:hover {
       height: 100%;
       object-fit: contain;
       object-position: 50% 50%;
+    }
+  }
+}
+
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.wow2:not(.animate__animated) {
+  visibility: hidden;
+}
+
+.footer__marketplace__item {
+  transition: all 0.2s ease-in-out;
+  svg path {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background: #fff;
+    svg path {
+      fill: #000;
     }
   }
 }
