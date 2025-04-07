@@ -107,11 +107,33 @@
 
 <section class="panel section1">
     <div id="scene1" class="scene">
-        <div data-depth="0.50">
-            <picture>
-                <source srcset="images/dist/bg1.jpg 1x, images/dist/bg1@2.jpg 2x">
-                <img src="images/dist/bg1.jpg" loading="lazy" alt="">
-            </picture>
+        <div data-depth="0.20">
+            <div class="section1__img1 wow2 animate__fadeIn">
+                <picture>
+                    <img src="images/dist/sw1_1.png" width="196" height="135" loading="lazy" alt="">
+                </picture>
+            </div>
+        </div>
+        <div data-depth="0.40">
+            <div class="section1__img2 wow2 animate__fadeIn">
+                <picture>
+                    <img src="images/dist/sw1_2.png" width="101" height="104" loading="lazy" alt="">
+                </picture>
+            </div>
+        </div>
+        <div data-depth="0.10">
+            <div class="section1__img3 wow2 animate__fadeIn">
+                <picture>
+                    <img src="images/dist/sw1_3.png" width="154" height="118" loading="lazy" alt="">
+                </picture>
+            </div>
+        </div>
+        <div data-depth="0.20">
+            <div class="section1__img4 wow2 animate__fadeIn">
+                <picture>
+                    <img src="images/dist/sw1_4.png" width="487" height="514" loading="lazy" alt="">
+                </picture>
+            </div>
         </div>
     </div>
     <div class="container position-relative z-3">
@@ -165,15 +187,26 @@
 <div class="panel-top section3"></div>
 <section class="panel section3">
     <div class="container position-relative">
-        <div class="section3__after wow2 animate__fadeIn">
-            <img src="images/dist/sweet3_1.png" width="334" height="335" alt="" loading="lazy">
+        <div id="scene4" class="scene">
+            <div data-depth="0.10">
+                <div class="section3__after wow2 animate__fadeIn">
+                    <img src="images/dist/sweet3_1.png" width="334" height="335" alt="" loading="lazy">
+                </div>
+            </div>
+            <div data-depth="0.10">
+                <div class="section3__before wow2 animate__fadeIn">
+                    <img src="images/dist/sweet3_2.png" width="397" height="248" alt="" loading="lazy">
+                </div>
+            </div>
+            <div data-depth="0.30">
+                <div class="section3__center wow2 animate__fadeIn">
+                    <img src="images/dist/sweet3@2.png" width="166" height="436" alt="" loading="lazy">
+                </div>
+            </div>
         </div>
-        <div class="section3__before wow2 animate__fadeIn">
-            <img src="images/dist/sweet3_2.png" width="397" height="248" alt="" loading="lazy">
-        </div>
-        <div class="row align-items-end ">
+        <div class="row align-items-end position-relative z-3">
             <div class="col-lg-6 col-xl-5 offset-xl-1 offset-lg-0">
-                <div class="d-flex justify-content-center wow2 animate__fadeIn">
+                <div class="d-flex justify-content-center wow2 animate__fadeIn d-lg-none">
                     <picture>
                         <source media="(min-width: 768px)"
                                 srcset="images/dist/sweet3.png 1x, images/dist/sweet3@2.png 2x">
@@ -509,7 +542,7 @@
     <div class="marketplace overflow-hidden">
         <div class="container position-relative">
             <div id="scene2" class="marketplace__bg">
-                <div class="marketplace__bg__wrap" data-depth="0.50"></div>
+                <div class="marketplace__bg__wrap" data-depth-y="0.50"></div>
             </div>
             <div class="marketplace__desc position-relative z-3 wow2 animate__fadeIn">
                 <h2>Где купить</h2>
@@ -583,7 +616,7 @@
                         <span>СОТРУДНИЧЕСТВО</span>
                     </a>
                 </div>
-                <div class="home-prim__img position-relative z-1" >
+                <div class="home-prim__img position-relative z-1">
                     <div class="home-prim__img__wrap" id="scene3">
                         <div class=" wow2 animate__fadeIn" data-depth="0.50">
                             <picture>

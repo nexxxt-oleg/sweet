@@ -55,6 +55,13 @@
 }
 
 @media screen and (max-width: 991px) {
+  .scene,
+  .marketplace .marketplace__bg {
+    display: none;
+  }
+  .wow2:not(.animate__animated) {
+    visibility: visible;
+  }
   .page-bay__desc {
     padding-top: 0;
   }
@@ -553,6 +560,9 @@
 
 
 @media screen and (max-width: 768px) {
+  .home-footer {
+    padding-top: 0;
+  }
   .page-bay {
     padding-bottom: 60px;
   }
