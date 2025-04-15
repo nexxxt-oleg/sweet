@@ -151,7 +151,7 @@
 <section class="panel section2">
     <div class="container">
         <div class="row align-items-center">
-            <div class="offset-xl-2 offset-lg-1 offset-0 col-lg-6">
+            <!--div class="offset-xl-2 offset-lg-1 offset-0 col-lg-6 position-relative z-3">
                 <h2 class="wow2 animate__fadeIn">Безупречный<br>
                     свет
                 </h2>
@@ -172,16 +172,46 @@
                         </svg>
                     </span>
                 </a>
-            </div>
-            <div class="col-lg-4 section2__img wow2 animate__fadeIn">
-                <picture>
+            </div-->
+            <div class="col-lg-4 section2__img wow2 animate__fadeIn position-relative z-1">
+
+                <!--picture>
                     <source media="(max-width: 991px)" srcset="images/dist/sweet2_mob.png">
                     <source media="(min-width: 992px)" srcset="images/dist/sweet2.png 1x, images/dist/sweet2@2.png 2x">
                     <img src="images/dist/sweet2.png" width="298" height="478" alt="" loading="lazy">
-                </picture>
+                </picture-->
+                <!--div class="section2__video">
+                    <video autoplay muted loop width="400">
+                        <source src="images/dist/video.mkv" type="video/mp4">
+                    </video>
+                </div-->
+
+
             </div>
         </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="threesixty product1">
+                    <div class="spinner">
+                        <span>0%</span>
+                    </div>
+                    <ol class="threesixty_images"></ol>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div
+                        class="cloudimage-360"
+                        id="gurkha-suv"
+                        data-folder="/images/dist/sweet/"
+                        data-hide-360-log="true"
+                        data-autoplay="true"
+                        data-disable-drag="true"
+                        data-filename-x="{index}.png"
+                        data-amount-x="55"
+                ></div>
 
+            </div>
+        </div>
     </div>
 </section>
 <div class="panel-top section3"></div>
@@ -856,6 +886,9 @@
 </div><!-- end main-->
 <script src="js/vendor.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/latest/js-cloudimage-360-view.min.js"></script>
+<script src="js/threesixty.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>

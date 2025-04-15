@@ -46,12 +46,12 @@ a {
     background-position: 50% 0;
     background-size: auto 100%;
     z-index: 1;
-   /* @include respond(mac) {
-      background-image: url("../images/dist/bg1@2.jpg");
-    }
-    @include respond(tablet) {
-      background-image: url("../images/dist/bg1.jpg");
-    }*/
+    /* @include respond(mac) {
+       background-image: url("../images/dist/bg1@2.jpg");
+     }
+     @include respond(tablet) {
+       background-image: url("../images/dist/bg1.jpg");
+     }*/
 
     .container {
       padding-top: 100px;
@@ -305,6 +305,7 @@ a {
     bottom: -70px;
     right: -200px;
   }
+
   .container {
     .row {
       position: relative;
@@ -620,6 +621,7 @@ a {
     padding-bottom: 130px;
 
   }
+
   .marketplace__bg {
     position: absolute;
     z-index: 1;
@@ -1230,11 +1232,13 @@ a {
     list-style-type: none;
     margin: 0;
     padding: 15px 0;
+
     li {
       padding: 0 0 10px 30px;
       font-size: 16px;
       line-height: 24px;
       position: relative;
+
       &::after {
         content: '';
         display: block;
@@ -1251,7 +1255,7 @@ a {
   }
 }
 
-.product-page__text{
+.product-page__text {
   padding-bottom: 30px;
 }
 
@@ -1262,6 +1266,7 @@ a {
 .product-page {
   padding-top: 130px;
   padding-bottom: 150px;
+
   &__wrap {
     overflow: hidden;
   }
@@ -1270,6 +1275,7 @@ a {
     width: 50%;
     float: right;
     padding-left: 13px;
+
     h1 {
       font-weight: 800;
       font-size: 42px;
@@ -1278,6 +1284,7 @@ a {
       margin: 0 0 45px;
     }
   }
+
   &__images {
     width: 50%;
     float: left;
@@ -1325,6 +1332,7 @@ a {
 
 .product-page__params {
   padding-bottom: 50px;
+
   &__item {
     display: flex;
     align-items: center;
@@ -1332,6 +1340,7 @@ a {
     padding: 10px 10px 10px 20px;
     border: 1px solid #dedede;
     border-radius: 12px;
+
     &__desc {
       flex-grow: 1;
     }
@@ -1368,6 +1377,7 @@ a {
   z-index: 20;
   top: 20px;
   right: 73px;
+
   img {
     display: block;
     margin-bottom: 20px;
@@ -1376,6 +1386,7 @@ a {
 
 .product-page__images {
   padding-bottom: 50px;
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -1389,6 +1400,7 @@ a {
 
   &__big {
     width: 100%;
+
     .product-page__images__wrap {
       padding: 120px;
     }
@@ -1405,8 +1417,10 @@ a {
     background: #f5f5f5;
   }
 }
+
 .product-page__params__item__right {
   min-width: 20px;
+
   .product-box__props__item__val__color {
     margin-left: 0;
     width: 20px;
@@ -1414,6 +1428,7 @@ a {
     border-radius: 10px;
   }
 }
+
 .ozon {
   background: #005bff;
 }
@@ -1429,6 +1444,7 @@ a {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
+
   &__label {
     font-weight: bold;
     font-size: 24px;
@@ -1437,10 +1453,12 @@ a {
   &__list {
     margin-left: auto;
     flex-wrap: nowrap;
+
     li {
       padding-left: 20px;
     }
   }
+
   &__img {
     display: flex;
     align-items: center;
@@ -1449,6 +1467,7 @@ a {
     width: 140px;
     border-radius: 12px;
     text-decoration: none;
+
     &.shop {
       border: 1px solid #000;
       color: #000;
@@ -1463,18 +1482,22 @@ a {
 .product-page__har {
   padding-top: 40px;
   border-top: 1px solid #dedede;
+
   &__title {
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
   }
+
   &__item {
     display: flex;
     padding-bottom: 10px;
+
     &__label {
       width: 55%;
       overflow: hidden;
+
       span {
         position: relative;
         display: inline-block;
@@ -1482,6 +1505,7 @@ a {
         font-size: 15px;
         line-height: 18px;
         color: #6c7a89;
+
         &::after {
           content: '';
           display: block;
@@ -1496,6 +1520,7 @@ a {
 
       }
     }
+
     &__val {
       width: 45%;
       font-size: 15px;
@@ -1514,8 +1539,10 @@ a {
 .page-wrap {
   padding-top: 215px;
   padding-bottom: 150px;
-  &__header  {
+
+  &__header {
     padding-bottom: 60px;
+
     h1 {
       margin: 0;
       font-size: 96px;
@@ -1529,11 +1556,13 @@ a {
 .contact-info {
   padding-bottom: 95px;
   border-bottom: 1px solid #dedede;
+
   &__phone {
     font-weight: bold;
     font-size: 30px;
     text-decoration: none;
     color: #000;
+
     &:hover {
       text-decoration: underline;
       color: #000;
@@ -1545,6 +1574,7 @@ a {
     font-size: 30px;
     text-decoration: underline;
     color: #000;
+
     &:hover {
       text-decoration: none;
       color: #000;
@@ -1562,6 +1592,7 @@ a {
     font-size: 18px;
     line-height: 24px;
   }
+
   &__requisites {
     display: inline-flex;
     align-items: center;
@@ -1570,6 +1601,7 @@ a {
     border-radius: 36px;
     border: 1px solid #000;
     text-decoration: none;
+
     span {
       font-size: 16px;
       font-weight: bold;
@@ -1592,6 +1624,7 @@ a {
 
 .form-box {
   padding-top: 90px;
+
   &__title {
     padding-bottom: 55px;
     font-size: 48px;
@@ -1599,8 +1632,10 @@ a {
     text-transform: uppercase;
     line-height: 1.3;
   }
+
   &__item {
     padding-bottom: 30px;
+
     .form-control {
       width: 100%;
       height: 62px;
@@ -1612,10 +1647,12 @@ a {
       background: #f5f5f5;
       border-radius: 10px;
       color: #000;
+
       &::placeholder {
         color: #6c7a89;
         opacity: 1;
       }
+
       &:focus,
       &:hover,
       &:active {
@@ -1629,8 +1666,10 @@ a {
       height: 154px;
     }
   }
+
   &__body {
     margin: 0 -36px;
+
     & > div {
       padding-left: 36px;
       padding-right: 36px;
@@ -1641,6 +1680,7 @@ a {
     align-items: center;
     padding-top: 20px;
     margin: 0 -36px;
+
     & > div {
       padding-left: 36px;
       padding-right: 36px;
@@ -1649,9 +1689,11 @@ a {
     &__ps {
       font-size: 14px;
       line-height: 18px;
+
       a {
         color: #000;
         text-decoration: underline;
+
         &:hover {
           text-decoration: none;
         }
@@ -1665,11 +1707,14 @@ a {
   &__item {
     display: block;
     margin-bottom: 65px;
+
     &:hover {
       color: #6c7a89;
     }
+
     &__img {
       display: block;
+
       img {
         display: block;
         width: 100%;
@@ -1685,12 +1730,13 @@ a {
         font-weight: 600;
         font-size: 30px;
         line-height: 1.3;
-        margin:0 0 10px ;
+        margin: 0 0 10px;
       }
+
       p {
         font-size: 16px;
         line-height: 24px;
-        margin:0 0 10px ;
+        margin: 0 0 10px;
       }
     }
 
@@ -1702,14 +1748,17 @@ a {
 
   }
 }
+
 a:hover {
   color: #6c7a89;
 }
 
 .single-news {
   padding-bottom: 30px;
+
   &__header {
     padding-bottom: 40px;
+
     h1 {
       font-size: 42px;
       font-weight: 800;
@@ -1728,6 +1777,7 @@ a:hover {
   &__pic {
     display: block;
     margin-bottom: 25px;
+
     img {
       display: block;
       width: 100%;
@@ -1740,8 +1790,10 @@ a:hover {
 .page-bay {
   padding-top: 160px;
   padding-bottom: 130px;
+
   &__desc {
     padding-top: 50px;
+
     h1 {
       font-size: 96px;
       line-height: 1;
@@ -1749,6 +1801,7 @@ a:hover {
       text-transform: uppercase;
       margin: 0 0 30px;
     }
+
     p {
       font-size: 28px;
       line-height: 34px;
@@ -1762,6 +1815,7 @@ a:hover {
     }
   }
 }
+
 .scene {
   position: absolute;
   z-index: 1;
@@ -1774,10 +1828,12 @@ a:hover {
 .panel-top.section5 {
   background: #efeff0;
 }
+
 .partners {
   background: #efeff0;
   padding-top: 60px;
   padding-bottom: 130px;
+
   h2 {
     font-size: 48px;
     font-weight: 800;
@@ -1795,6 +1851,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+
     img {
       width: 100%;
       height: 100%;
@@ -1810,6 +1867,7 @@ a:hover {
   --animate-delay: 1s;
   --animate-repeat: 1;
 }
+
 .animate__animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -1832,6 +1890,7 @@ a:hover {
     transform: translate3d(0, 0, 0);
   }
 }
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -1845,10 +1904,12 @@ a:hover {
     transform: translate3d(0, 0, 0);
   }
 }
+
 .animate__fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -1858,6 +1919,7 @@ a:hover {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -1867,6 +1929,7 @@ a:hover {
     opacity: 1;
   }
 }
+
 .animate__fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -1878,36 +1941,159 @@ a:hover {
 
 .footer__marketplace__item {
   transition: all 0.2s ease-in-out;
+
   svg path {
     transition: all 0.2s ease-in-out;
   }
 
   &:hover {
     background: #fff;
+
     svg path {
       fill: #000;
     }
   }
 }
 
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0, 10%, 0) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+  }
+}
+
 .section1__img1 {
   margin: -30px 0 0 22vw;
+  animation: wave 4s 0.1s infinite linear;
 }
+
 .section1__img2 {
+  animation: wave 3s 0.1s infinite linear;
   margin: 110px 0 0 13vw;
 }
+
 .section1__img3 {
+  animation: wave 6s 0.1s infinite linear;
   margin: 300px 0 0 9vw;
 }
+
 .section1__img4 {
+  animation: wave 7s 0.1s infinite linear;
   margin: 400px 0 0 10vw;
 }
+
 #scene4 {
   & > div {
     width: 100%;
     height: 100%;
   }
 }
+
 .section3__center {
   margin: 200px 0 0 350px;
+}
+
+.threesixty {
+  position: relative;
+  overflow: hidden;
+}
+
+.threesixty .threesixty_images {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.threesixty .threesixty_images img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.threesixty .threesixty_images img.previous-image {
+  visibility: hidden;
+
+}
+
+.threesixty .threesixty_images img.current-image {
+  visibility: visible;
+}
+
+.threesixty .spinner {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.threesixty .spinner span {
+
+  font-size: 12px;
+  font-weight: bolder;
+  color: #FFF;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+}
+
+.threesixty .nav_bar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+}
+
+.threesixty .nav_bar a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  float: left;
+
+  text-indent: -99999px;
+}
+
+.threesixty .nav_bar a.nav_bar_play {
+  background-position: 0 0 !important;
+}
+
+.threesixty .nav_bar a.nav_bar_previous {
+  background-position: 0 -73px !important;
+}
+
+.threesixty .nav_bar a.nav_bar_stop {
+  background-position: 0 -37px !important;
+}
+
+.threesixty .nav_bar a.nav_bar_next {
+  background-position: 0 -104px !important;
+}
+
+/* html */
+.threesixty:-webkit-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
+}
+
+.threesixty:-moz-full-screen {
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  padding-top: 200px;
 }
