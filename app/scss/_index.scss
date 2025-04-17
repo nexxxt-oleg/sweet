@@ -990,7 +990,9 @@ a {
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+
+      color: #b7b7b7;
+      text-decoration: none;
     }
   }
 }
@@ -1970,22 +1972,25 @@ a:hover {
 
 .section1__img1 {
   margin: -30px 0 0 22vw;
-  animation: wave 4s 0.1s infinite linear;
+  animation: wave 8s infinite linear;
 }
 
 .section1__img2 {
-  animation: wave 3s 0.1s infinite linear;
+  animation: wave 5s infinite linear;
   margin: 110px 0 0 13vw;
 }
 
 .section1__img3 {
-  animation: wave 6s 0.1s infinite linear;
+  animation: wave 9s 0.1s infinite linear;
   margin: 300px 0 0 9vw;
 }
 
 .section1__img4 {
-  animation: wave 7s 0.1s infinite linear;
+  animation: wave 11s 0.1s infinite linear;
   margin: 400px 0 0 10vw;
+}
+.marketplace .marketplace__bg__wrap {
+  animation: wave 15s 0.1s infinite linear;
 }
 
 #scene4 {
@@ -1999,101 +2004,3 @@ a:hover {
   margin: 200px 0 0 350px;
 }
 
-.threesixty {
-  position: relative;
-  overflow: hidden;
-}
-
-.threesixty .threesixty_images {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.threesixty .threesixty_images img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: auto;
-}
-
-.threesixty .threesixty_images img.previous-image {
-  visibility: hidden;
-
-}
-
-.threesixty .threesixty_images img.current-image {
-  visibility: visible;
-}
-
-.threesixty .spinner {
-  width: 60px;
-  display: block;
-  margin: 0 auto;
-  height: 30px;
-  background: #333;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.threesixty .spinner span {
-
-  font-size: 12px;
-  font-weight: bolder;
-  color: #FFF;
-  text-align: center;
-  line-height: 30px;
-  display: block;
-}
-
-.threesixty .nav_bar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 11;
-}
-
-.threesixty .nav_bar a {
-  display: block;
-  width: 32px;
-  height: 32px;
-  float: left;
-
-  text-indent: -99999px;
-}
-
-.threesixty .nav_bar a.nav_bar_play {
-  background-position: 0 0 !important;
-}
-
-.threesixty .nav_bar a.nav_bar_previous {
-  background-position: 0 -73px !important;
-}
-
-.threesixty .nav_bar a.nav_bar_stop {
-  background-position: 0 -37px !important;
-}
-
-.threesixty .nav_bar a.nav_bar_next {
-  background-position: 0 -104px !important;
-}
-
-/* html */
-.threesixty:-webkit-full-screen {
-  background: #ffffff;
-  width: 100%;
-  height: 100%;
-  margin-top: 0;
-  padding-top: 200px;
-}
-
-.threesixty:-moz-full-screen {
-  background: #ffffff;
-  width: 100%;
-  height: 100%;
-  margin-top: 0;
-  padding-top: 200px;
-}
