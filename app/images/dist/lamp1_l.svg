@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 150.03">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #afafaf;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="60" y1="35.75" x2="60" y2="73.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e5e5e5"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" x="1.7" y="0" width="117" height="99" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="-5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#e5e5e5" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <path id="path14" class="cls-2" d="M72.02,121.75s4.81-2.1,4.81-8.05c0-1.45,0,2.46,0-5.27,0-26.77,11.63-30.58,11.63-44.47,0-15.72-12.74-28.46-28.46-28.46s-28.46,12.74-28.46,28.46c0,13.89,11.63,17.7,11.63,44.47,0,7.73,0,3.82,0,5.27,0,5.95,4.81,8.05,4.81,8.05h24.06"/>
+      <path id="path18" class="cls-2" d="M67.64,144.12l-2.95,2.55h-8.84l-2.94-2.55h14.73Z"/>
+      <path id="path22" class="cls-2" d="M72.65,121.75v3.17l-.87,2.09.87,1.97-1.11,1.97,1.23,1.96-1.23,1.97,1.23,2.08-1.23,1.73,1.11,2.21-3.57,3.06h-18.19l-2.45-2.45v-1.84l-1.1-1.97.97-2.09-.97-1.96.97-1.97-.85-1.96.98-1.96-1.1-2.09v-3.91h25.31"/>
+      <path id="path24" class="cls-2" d="M72.65,121.75v3.17l-.87,2.09.87,1.97-1.11,1.97,1.23,1.96-1.23,1.97,1.23,2.08-1.23,1.73,1.11,2.21-3.57,3.06h-18.19l-2.45-2.45v-1.84l-1.1-1.97.97-2.09-.97-1.96.97-1.97-.85-1.96.98-1.96-1.1-2.09v-3.91h25.31Z"/>
+      <path id="path26" class="cls-2" d="M72.65,140.9l-17.86.46"/>
+      <path id="path28" class="cls-2" d="M67.54,128.92l-20.08.79"/>
+      <path id="path30" class="cls-2" d="M72.76,132.91l-25.42.74"/>
+      <path id="path32" class="cls-2" d="M72.76,136.96l-25.42.74"/>
+      <path class="cls-3" d="M60,35.75c15.56,0,28.21,12.65,28.21,28.21,0,3.87-.93,6.95-2.24,9.98h-51.94c-1.31-3.03-2.24-6.11-2.24-9.98,0-15.56,12.65-28.21,28.21-28.21Z"/>
+      <path id="path36" class="cls-2" d="M86.19,73.94h-52.37"/>
+    </g>
+    <rect class="cls-1" y="10.03" width="120" height="140"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #afafaf;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g id="g10-2">
+      <g id="g12-2">
+        <path id="path14-4" class="cls-2" d="M54.09,131.97h-4.91v-4.6h4.91v4.6"/>
+        <path id="path16-4" class="cls-2" d="M54.09,131.97h-4.91v-4.6h4.91v4.6Z"/>
+        <path id="path18-4" class="cls-2" d="M55.68,131.97h-8.1v4.91h8.1v-4.91"/>
+        <path id="path20-3" class="cls-2" d="M55.68,131.97h-8.1v4.91h8.1v-4.91Z"/>
+        <path id="path22-4" class="cls-2" d="M65.49,131.97h4.91v-4.6h-4.91v4.6"/>
+        <path id="path24-4" class="cls-2" d="M65.49,131.97h4.91v-4.6h-4.91v4.6Z"/>
+        <path id="path26-4" class="cls-2" d="M63.9,131.97h8.1v4.91h-8.1v-4.91"/>
+        <path id="path28-4" class="cls-2" d="M63.9,131.97h8.1v4.91h-8.1v-4.91Z"/>
+        <path id="path30-4" class="cls-2" d="M101.35,52.22c-4.45,13.79-10.69,23.96-18.7,31.01-1.71,1.51-2.47,2.31-2.7,4.54-.23,2.24-2.69,33.24-2.82,34.71-.13,1.47-3.93,4.9-4.91,4.9h-24.88c-.98,0-4.78-3.43-4.91-4.9s-2.58-32.47-2.81-34.71-.99-3.04-2.71-4.54c-8.01-7.05-14.25-17.22-18.7-31.01h83.12"/>
+        <path id="path32-4" class="cls-2" d="M101.35,52.22c-4.45,13.79-10.69,23.96-18.7,31.01-1.71,1.51-2.47,2.31-2.7,4.54-.23,2.24-2.69,33.24-2.82,34.71-.13,1.47-3.93,4.9-4.91,4.9h-24.88c-.98,0-4.78-3.43-4.91-4.9s-2.58-32.47-2.81-34.71-.99-3.04-2.71-4.54c-8.01-7.05-14.25-17.22-18.7-31.01h83.14Z"/>
+        <path id="path34-4" class="cls-2" d="M103.72,52.22H15.85v-3.89h87.87v3.89"/>
+        <path id="path36-4" class="cls-2" d="M103.72,52.22H15.85v-3.89h87.87v3.89Z"/>
+        <path id="path92" class="cls-2" d="M77.03,122.78h-34.51"/>
+      </g>
+    </g>
+    <rect class="cls-1" width="120" height="140"/>
+  </g>
+</svg>

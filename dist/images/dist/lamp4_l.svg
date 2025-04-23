@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 140">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #afafaf;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="60" y1="45.21" x2="60" y2="91.01" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff9cc"/>
+      <stop offset="1" stop-color="#fff9cc"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" x="14.77" y="9.97" width="90" height="107" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="-5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#fff9cc" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <rect class="cls-1" width="120" height="140"/>
+    <g>
+      <g>
+        <g>
+          <path id="path26-5" class="cls-2" d="M65.83,114.82v21.15c0,.66.54,1.2,1.2,1.2s1.2-.54,1.2-1.2v-21.15h-2.39"/>
+          <path id="path28-5" class="cls-2" d="M65.83,114.82v21.15c0,.66.54,1.2,1.2,1.2s1.2-.54,1.2-1.2v-21.15h-2.4Z"/>
+          <path id="path30-5" class="cls-2" d="M54.18,114.82v21.15c0,.66-.54,1.2-1.2,1.2s-1.2-.54-1.2-1.2v-21.15h2.39"/>
+          <path id="path32-5" class="cls-2" d="M54.18,114.82v21.15c0,.66-.54,1.2-1.2,1.2s-1.2-.54-1.2-1.2v-21.15h2.4Z"/>
+        </g>
+        <path class="cls-2" d="M61.66,46.55c-.14-.9-.83-1.59-1.66-1.59s-1.52.69-1.66,1.59c-7.29.83-12.95,7-12.95,14.51v30.2h29.23v-30.2c0-7.51-5.66-13.69-12.95-14.51h0Z"/>
+        <rect class="cls-2" x="47.67" y="91.26" width="24.67" height="23.55"/>
+      </g>
+      <path class="cls-3" d="M45.63,91.01h28.73v-29.95c0-7.31-5.47-13.45-12.73-14.26-.12,0-.21-.09-.23-.21-.12-.8-.72-1.38-1.41-1.38s-1.29.58-1.41,1.38c-.02.11-.11.2-.22.21-7.26.83-12.73,6.96-12.73,14.26v29.95Z"/>
+    </g>
+  </g>
+</svg>

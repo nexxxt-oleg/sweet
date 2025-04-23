@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 177 155.03">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #afafaf;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="88.84" y1="35.35" x2="88.84" y2="63.15" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".16" stop-color="#fffefd" stop-opacity=".02"/>
+      <stop offset=".32" stop-color="#fffef9" stop-opacity=".07"/>
+      <stop offset=".48" stop-color="#fffdf2" stop-opacity=".15"/>
+      <stop offset=".65" stop-color="#fffce8" stop-opacity=".26"/>
+      <stop offset=".82" stop-color="#fffadc" stop-opacity=".41"/>
+      <stop offset=".99" stop-color="#fff9cd" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#fff9cc" stop-opacity=".6"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" x="0" y="0" width="177" height="89" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="-5"/>
+      <feGaussianBlur result="blur" stdDeviation="10"/>
+      <feFlood flood-color="#fff9cc" flood-opacity=".2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <g id="g10-2">
+        <g id="g12-2">
+          <path id="path14-4" class="cls-2" d="M82.94,147h-4.91v-4.6h4.91v4.6"/>
+          <path id="path16-4" class="cls-2" d="M82.94,147h-4.91v-4.6h4.91v4.6Z"/>
+          <path id="path18-4" class="cls-2" d="M84.53,147h-8.1v4.91h8.1v-4.91"/>
+          <path id="path20-3" class="cls-2" d="M84.53,147h-8.1v4.91h8.1v-4.91Z"/>
+          <path id="path22-4" class="cls-2" d="M94.34,147h4.91v-4.6h-4.91v4.6"/>
+          <path id="path24-4" class="cls-2" d="M94.34,147h4.91v-4.6h-4.91v4.6Z"/>
+          <path id="path26-4" class="cls-2" d="M92.75,147h8.1v4.91h-8.1v-4.91"/>
+          <path id="path28-4" class="cls-2" d="M92.75,147h8.1v4.91h-8.1v-4.91Z"/>
+          <path id="path30-4" class="cls-2" d="M130.2,67.25c-4.45,13.79-10.69,23.96-18.7,31.01-1.71,1.51-2.47,2.31-2.7,4.54-.23,2.24-2.69,33.24-2.82,34.71-.13,1.47-3.93,4.9-4.91,4.9h-24.88c-.98,0-4.78-3.43-4.91-4.9s-2.58-32.47-2.81-34.71-.99-3.04-2.71-4.54c-8.01-7.05-14.25-17.22-18.7-31.01h83.12"/>
+          <path id="path32-4" class="cls-2" d="M130.2,67.25c-4.45,13.79-10.69,23.96-18.7,31.01-1.71,1.51-2.47,2.31-2.7,4.54-.23,2.24-2.69,33.24-2.82,34.71-.13,1.47-3.93,4.9-4.91,4.9h-24.88c-.98,0-4.78-3.43-4.91-4.9s-2.58-32.47-2.81-34.71-.99-3.04-2.71-4.54c-8.01-7.05-14.25-17.22-18.7-31.01h83.14Z"/>
+          <path id="path34-4" class="cls-2" d="M132.57,67.25H44.7v-3.89h87.87v3.89"/>
+          <path id="path36-4" class="cls-2" d="M132.57,67.25H44.7v-3.89h87.87v3.89Z"/>
+          <path id="path92" class="cls-2" d="M105.88,137.81h-34.51"/>
+        </g>
+      </g>
+      <polygon class="cls-3" points="146.95 35.35 30.74 35.35 44.91 63.15 132.78 63.15 146.95 35.35"/>
+    </g>
+    <rect class="cls-1" x="28.84" y="15.03" width="120" height="140"/>
+  </g>
+</svg>

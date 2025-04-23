@@ -158,8 +158,11 @@ a {
   z-index: 5;
   background: #fff;
   padding-top: 50px;
+  transition: all 0.5s ease-in-out;
 }
-
+.black-bg.active {
+  background-color: #fff !important;
+}
 .header {
   position: absolute;
   z-index: 20;
@@ -337,12 +340,48 @@ a {
   }
 }
 
+
 .compact-line {
   width: 100%;
-  height: 168px;
-  background: url("../images/dist/sweet-line.svg") 0 50% repeat-x;
-  background-size: auto 100%;
-  margin-bottom: 180px;
+  min-width: 1920px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 200px;
+ /* background: url("../images/dist/sweet-line.svg") 0 50% repeat-x;
+  background-size: auto 100%;*/
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 200px;
+    min-width: 200px;
+
+    &__active {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      opacity: 0;
+      transition: all 1s ease-in-out 0.1s;
+      &.active {
+        opacity: 1;
+      }
+
+    }
+  }
+}
+
+.sweet-animate.active {
+  .compact-line__item__active {
+
+  }
 }
 
 
@@ -2003,4 +2042,41 @@ a:hover {
 .section3__center {
   margin: 200px 0 0 350px;
 }
+.tpad150 {
+  padding-top: 100px;
+}
+.black-bg {
+  background-color: #000;
+}
+.sweet-animate {
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  .home-footer {
+    transition: all 0.5s ease-in-out;
+  }
+  .section4 {
+    transition: all 0.5s ease-in-out;
+  }
 
+  h2,
+  & p {
+    transition: all 0.3s ease-in-out;
+  }
+  &.active {
+    .home-footer {
+      background: #000;
+    }
+    .section4 {
+      background: #000;
+    }
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+.fpad200 {
+  padding-bottom: 200px;
+}
