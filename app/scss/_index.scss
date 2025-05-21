@@ -2083,3 +2083,45 @@ a:hover {
 .fpad200 {
   padding-bottom: 200px;
 }
+.modal-dialog {
+  max-width: 540px;
+  .modal-content {
+    border-radius: 30px;
+    padding: 40px;
+    border: none;
+  }
+  .modal__close {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+.modal__send-text {
+  text-align: center;
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: #f5f5f5;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #000;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #000;
+  }
+
+}
