@@ -48,13 +48,14 @@
         <div class="form-box__body row">
             <div class="col-lg-6">
                 <div class="form-box__item">
-                    <input type="text" required class="form-control" name="fio" placeholder="Ваше имя">
+                    <input id="fio" type="text" required class="form-control" name="fio" placeholder="Ваше имя">
                 </div>
                 <div class="form-box__item">
-                    <input type="email" required class="form-control" name="email" placeholder="Электронная почта">
+                    <input id="email" type="email" required class="form-control" name="email" placeholder="Электронная почта">
                 </div>
                 <div class="form-box__item">
-                    <input type="tel" required class="form-control js-mask-phone" name="phone" placeholder="Номер телефона">
+                    <input id="tel" type="tel" required class="form-control js-mask-phone" name="phone"
+                           placeholder="Номер телефона">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -83,17 +84,22 @@
 <div class="modal" id="sendOk" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <span  class="modal__close" data-bs-dismiss="modal">
-                <svg width="28" href="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.01 512">
-                    <path fill="#000" d="m25,512C11.2,512.01,0,500.81,0,487.01c0-6.63,2.63-13,7.32-17.68L469.33,7.32c9.76-9.76,25.6-9.76,35.36,0,9.76,9.76,9.76,25.6,0,35.36L42.68,504.68c-4.69,4.7-11.05,7.33-17.68,7.32"/>
-                    <path fill="#000" d="m487,512c-6.63,0-13-2.62-17.68-7.32L7.33,42.68C-2.44,32.92-2.44,17.09,7.33,7.32c9.76-9.76,25.6-9.76,35.36,0l462,462c9.76,9.76,9.77,25.59,0,35.36-4.69,4.69-11.05,7.33-17.68,7.32"/>
+            <span class="modal__close" data-bs-dismiss="modal">
+                <svg width="28" href="28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     viewBox="0 0 512.01 512">
+                    <path fill="#000"
+                          d="m25,512C11.2,512.01,0,500.81,0,487.01c0-6.63,2.63-13,7.32-17.68L469.33,7.32c9.76-9.76,25.6-9.76,35.36,0,9.76,9.76,9.76,25.6,0,35.36L42.68,504.68c-4.69,4.7-11.05,7.33-17.68,7.32"/>
+                    <path fill="#000"
+                          d="m487,512c-6.63,0-13-2.62-17.68-7.32L7.33,42.68C-2.44,32.92-2.44,17.09,7.33,7.32c9.76-9.76,25.6-9.76,35.36,0l462,462c9.76,9.76,9.77,25.59,0,35.36-4.69,4.69-11.05,7.33-17.68,7.32"/>
                 </svg>
             </span>
 
             <div class="modal__send-text">
                 <div class="modal__send-text__ico">
-                    <svg width="24" href="17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.99 368.41">
-                        <path class="cls-1" d="m500.09,11.89c-15.84-15.86-41.56-15.85-57.43,0L184.21,270.36l-114.87-114.87c-15.86-15.86-41.57-15.86-57.44,0s-15.86,41.57,0,57.44l143.58,143.58c7.93,7.93,18.32,11.9,28.71,11.9s20.8-3.96,28.72-11.9L500.09,69.33c15.86-15.85,15.86-41.57,0-57.44"/>
+                    <svg width="24" href="17" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.99 368.41">
+                        <path class="cls-1"
+                              d="m500.09,11.89c-15.84-15.86-41.56-15.85-57.43,0L184.21,270.36l-114.87-114.87c-15.86-15.86-41.57-15.86-57.44,0s-15.86,41.57,0,57.44l143.58,143.58c7.93,7.93,18.32,11.9,28.71,11.9s20.8-3.96,28.72-11.9L500.09,69.33c15.86-15.85,15.86-41.57,0-57.44"/>
                     </svg>
                 </div>
                 <div class="modal__send-text__title">
@@ -106,12 +112,40 @@
     </div>
 </div>
 
-
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        let modal = new bootstrap.Modal(document.getElementById('sendOk'));
-        modal.show();
+    document.addEventListener("DOMContentLoaded", () => {
+        const validate = new window.JustValidate('#myForm');
+        validate
+            .addField('#fio', [
+                {
+                    rule: 'required',
+                    errorMessage: 'Имя не заполнено',
+                },
+            ])
+            .addField('#email', [
+                {
+                    rule: 'required',
+                    errorMessage: 'Электронная почта не заполнено',
+                },
+                {
+                    rule: 'email',
+                    errorMessage: 'Адрес электронной почты должен содержать “@”',
+                },
+            ])
+            .addField('#tel', [
+                {
+                    rule: 'required',
+                    errorMessage: 'Телефон не заполнен',
+                },
+            ]);
+
+        /*document.getElementById('myForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            let modal = new bootstrap.Modal(document.getElementById('sendOk'));
+            modal.show();
+        });*/
+
     });
 </script>
 

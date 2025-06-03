@@ -1675,7 +1675,7 @@ a {
   }
 
   &__item {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 
     .form-control {
       width: 100%;
@@ -1684,7 +1684,7 @@ a {
       padding: 20px 30px;
       font-size: 18px;
       line-height: 22px;
-      border: none;
+      border: 1px solid #f5f5f5;
       background: #f5f5f5;
       border-radius: 10px;
       color: #000;
@@ -2124,4 +2124,21 @@ a:hover {
     color: #000;
   }
 
+}
+
+.form-box__item {
+  position: relative;
+  .form-control.just-validate-error-field {
+    border: 1px solid #d21313;
+  }
+  .just-validate-error-label {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 30px;
+    color: #d21313;
+    font-size: 13px;
+    line-height: 18px;
+    padding-top: 5px;
+  }
 }
