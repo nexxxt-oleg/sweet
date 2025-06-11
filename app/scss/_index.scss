@@ -2125,7 +2125,43 @@ a:hover {
   }
 
 }
+.catalog-page__filters__item__header {
+  cursor: pointer;
+}
 
+.product-page__market__img.shop:hover {
+  background-color: #000;
+  span {
+    color: #fff;
+  }
+}
+
+.product-page__market__img {
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    svg {
+      transform: scale(1.1);
+    }
+  }
+}
+.catalog-page__filters__item__header:hover .form-control {
+  border-color: #38cc7a;
+}
+.catalog-page__filters__radio-btn span:hover {
+  color: #38cc7a;
+}
+.fancybox__slide.has-image > .fancybox__content {
+  background-color: #fff;
+  padding: 15px;
+}
+.f-thumbs__slide__button{
+  background-color: #fff;
+}
+.product-page__params__more:hover {
+ color: #000;
+}
 .form-box__item {
   position: relative;
   .form-control.just-validate-error-field {
