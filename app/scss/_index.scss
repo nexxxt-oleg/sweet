@@ -1085,11 +1085,13 @@ a {
   padding-bottom: 60px;
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
   }
 
   &__item {
+
     flex-grow: 1;
     position: relative;
 
