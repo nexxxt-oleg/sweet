@@ -29,7 +29,7 @@
                     Фильтры
                 </div>
                 <a data-bs-toggle="offcanvas" href="#offcanvasFilter">
-                    <svg width="16" height="16" >
+                    <svg width="16" height="16">
                         <use xlink:href="#svg-close"></use>
                     </svg>
                 </a>
@@ -203,24 +203,20 @@
                         </div>
                         <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params5"
                              data-bs-parent="#accordionFilter">
-                            <ul class="nav">
-                                <li>
-                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                           data-bs-target="#filter_params5">
-                                        <input type="radio" value="Таблетка" name="filter_params5"
-                                               onchange="changeFilter('1000', 'filter5')">
-                                        <span>1000</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                           data-bs-target="#filter_params5">
-                                        <input type="radio" value="7 Вт" name="filter_params5"
-                                               onchange="changeFilter('1500', 'filter5')">
-                                        <span>1500</span>
-                                    </label>
-                                </li>
-                            </ul>
+                            <div class="nav">
+                                <div class="range-box">
+                                    <div class="js_range_filter "
+                                         data-max="100"
+                                         data-min="0"
+                                         data-step="1"
+                                         data-idmax="priceMax"
+                                         data-idmin="priceMin"
+                                         data-idfilter="filter5"
+                                    ></div>
+                                </div>
+                                <input type="hidden" name="priceMax" id="priceMax">
+                                <input type="hidden" name="priceMin" id="priceMin">
+                            </div>
                         </div>
                     </div>
                     <div class="catalog-page__filters__item accordion-item">
@@ -235,24 +231,7 @@
                         </div>
                         <div class="accordion-collapse collapse catalog-page__filters__item__body" id="filter_params6"
                              data-bs-parent="#accordionFilter">
-                            <ul class="nav">
-                                <li>
-                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                           data-bs-target="#filter_params6">
-                                        <input type="radio" value="Таблетка" name="filter_params6"
-                                               onchange="changeFilter('1000', 'filter6')">
-                                        <span>1000</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                           data-bs-target="#filter_params6">
-                                        <input type="radio" value="7 Вт" name="filter_params6"
-                                               onchange="changeFilter('1500', 'filter6')">
-                                        <span>1500</span>
-                                    </label>
-                                </li>
-                            </ul>
+
                         </div>
                     </div>
                 </div>
