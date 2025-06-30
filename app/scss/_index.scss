@@ -2254,3 +2254,44 @@ a:hover {
     background: #38cc7a;
   }
 }
+
+.pagination {
+  padding: 20px 0 30px;
+  justify-content: center;
+  li {
+    padding: 0 10px 10px;
+  }
+
+  &__link,
+  &__dots {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+  &__current {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 46px;
+    height: 46px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #000000;
+    background: #000;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+}
