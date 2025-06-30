@@ -652,6 +652,18 @@
 
 
 @media screen and (max-width: 768px) {
+  .pagination__current, .pagination__dots, .pagination__link {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .pagination li {
+    padding: 0 5px 5px;
+  }
+  .pagination__link svg {
+    width: 6px;
+    height: 14px;
+  }
   .catalog-page {
     padding-bottom: 50px;
   }
