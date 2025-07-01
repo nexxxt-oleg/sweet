@@ -1,4 +1,7 @@
 @media screen and (max-width: 1399px) {
+  .page-wrap__404 h1 {
+    font-size: 60px;
+  }
   .product-page__market {
     display: block;
 
@@ -29,6 +32,12 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .page-wrap__404 h1 {
+    font-size: 40px;
+  }
+  .page-wrap__404 p {
+    font-size: 16px;
+  }
   .compact-line__item {
     width: 180px;
     min-width: 180px;
@@ -62,6 +71,23 @@
 }
 
 @media screen and (max-width: 991px) {
+  .page-wrap__404-img {
+    margin: 0 0 30px;
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  .page-wrap__404 h1 {
+    padding-bottom: 20px;
+  }
+  .page-wrap__404 {
+    text-align: center;
+  }
+  .page-wrap .btn-black {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .сatalog-page__seo__img {
     padding: 10px  50px 0;
   }
@@ -652,6 +678,7 @@
 
 
 @media screen and (max-width: 768px) {
+
   .pagination__current, .pagination__dots, .pagination__link {
     width: 30px;
     height: 30px;
@@ -909,6 +936,21 @@
 }
 
 @media screen and (max-width: 574px) {
+  .cookie__wrap {
+    width: 100%;
+  }
+  .page-wrap__404-img img {
+    width: 120px;
+  }
+  .page-wrap__404 h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .page-wrap .btn-black {
+    width: 230px;
+    height: 64px;
+    font-size: 14px;
+  }
   .modal__close svg {
     width: 18px;
     height: 18px;
