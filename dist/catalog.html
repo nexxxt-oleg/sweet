@@ -125,299 +125,299 @@
             </a>
         </div>
 
-        <div class="col-12">
-            <div class="offcanvas-lg offcanvas-start" id="offcanvasFilter">
-                <div class="catalog-page__filters">
-                    <div class="catalog-page__filters__mod-header">
-                        <div class="catalog-page__filters__mod-header__title">
-                            Фильтры
-                        </div>
-                        <a data-bs-toggle="offcanvas" href="#offcanvasFilter">
-                            <svg width="16" height="16">
-                                <use xlink:href="#svg-close"></use>
-                            </svg>
-                        </a>
+    </div>
+
+    <div class="catalog-page__filter-box">
+        <div class="offcanvas-lg offcanvas-start" id="offcanvasFilter">
+            <div class="catalog-page__filters">
+                <div class="catalog-page__filters__mod-header">
+                    <div class="catalog-page__filters__mod-header__title">
+                        Фильтры
                     </div>
-                    <form action="">
-                        <div class="catalog-page__filters__list" id="accordionFilter">
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params1">
-                                    <div class="catalog-page__filters__item__header__mob-label">Форма</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter1" placeholder="Форма"
-                                               value="">
-                                        <label for="filter1">Форма</label>
-                                    </div>
-                                </div>
-                                <div class="catalog-page__filters__item__body">
-                                    <div class="accordion-collapse collapse " id="filter_params1"
-                                         data-bs-parent="#accordionFilter">
-                                        <ul class=" nav">
-                                            <li>
-                                                <label class="catalog-page__filters__checkbox-btn">
-                                                    <input type="checkbox" value="Таблетка" name="filter_params1">
-                                                    <span>Таблетка</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="catalog-page__filters__checkbox-btn">
-                                                    <input type="checkbox" value="Таблетка2" name="filter_params1">
-                                                    <span>Таблетка2</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="catalog-page__filters__checkbox-btn">
-                                                    <input type="checkbox" value="Таблетка3" name="filter_params1">
-                                                    <span>Таблетка3</span>
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasFilter">
+                        <svg width="16" height="16">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <form action="">
+                    <div class="catalog-page__filters__list" id="accordionFilter">
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params1">
+                                <div class="catalog-page__filters__item__header__mob-label">Форма</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter1" placeholder="Форма"
+                                           value="">
+                                    <label for="filter1">Форма</label>
                                 </div>
                             </div>
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params2">
-                                    <div class="catalog-page__filters__item__header__mob-label">Цоколь</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter2" placeholder="Форма"
-                                               value="">
-                                        <label for="filter2">Цоколь</label>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse catalog-page__filters__item__body"
-                                     id="filter_params2"
+                            <div class="catalog-page__filters__item__body">
+                                <div class="accordion-collapse collapse " id="filter_params1"
                                      data-bs-parent="#accordionFilter">
-                                    <ul class="nav">
+                                    <ul class=" nav">
                                         <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params2">
-                                                <input type="radio" value="Таблетка" name="filter_params2"
-                                                       onchange="changeFilter('GX53', 'filter2')">
+                                            <label class="catalog-page__filters__checkbox-btn">
+                                                <input type="checkbox" value="Таблетка" name="filter_params1">
                                                 <span>Таблетка</span>
                                             </label>
                                         </li>
                                         <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params2">
-                                                <input type="radio" value="Таблетка2" name="filter_params2"
-                                                       onchange="changeFilter('GX532', 'filter2')">
+                                            <label class="catalog-page__filters__checkbox-btn">
+                                                <input type="checkbox" value="Таблетка2" name="filter_params1">
                                                 <span>Таблетка2</span>
                                             </label>
                                         </li>
                                         <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params2">
-                                                <input type="radio" value="Таблетка3" name="filter_params2"
-                                                       onchange="changeFilter('GX533', 'filter2')">
+                                            <label class="catalog-page__filters__checkbox-btn">
+                                                <input type="checkbox" value="Таблетка3" name="filter_params1">
                                                 <span>Таблетка3</span>
                                             </label>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params3">
-                                    <div class="catalog-page__filters__item__header__mob-label">Цвет свечения 1</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter3"
-                                               placeholder="Цвет свечения"
-                                               value="">
-                                        <label for="filter3">Цвет свечения1</label>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse catalog-page__filters__item__body"
-                                     id="filter_params3"
-                                     data-bs-parent="#accordionFilter">
-                                    <ul class="nav">
-                                        <li>
-                                            <label class="catalog-page__filters__radio-btn disabled">
-                                                <input disabled type="radio" value="Таблетка" name="filter_params3"
-                                                       onchange="changeFilter('Белый', 'filter3')">
-                                                <span>Белый</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params3">
-                                                <input type="radio" value="Таблетка3" name="filter_params3"
-                                                       onchange="changeFilter('Красный', 'filter3')">
-                                                <span>Красный</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params3">
-                                                <input type="radio" value="Таблетка3" name="filter_params3"
-                                                       onchange="changeFilter('Красный3', 'filter3')">
-                                                <span>Красный3</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                        </div>
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params2">
+                                <div class="catalog-page__filters__item__header__mob-label">Цоколь</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter2" placeholder="Форма"
+                                           value="">
+                                    <label for="filter2">Цоколь</label>
                                 </div>
                             </div>
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params4">
-                                    <div class="catalog-page__filters__item__header__mob-label">Цвет свечения</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter4"
-                                               placeholder="Мощность, Вт"
-                                               value="">
-                                        <label for="filter4">Мощность, Вт</label>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse catalog-page__filters__item__body"
-                                     id="filter_params4"
-                                     data-bs-parent="#accordionFilter">
-                                    <ul class="nav">
-                                        <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params4">
-                                                <input type="radio" value="Таблетка" name="filter_params4"
-                                                       onchange="changeFilter('6 Вт', 'filter4')">
-                                                <span>6 Вт</span>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
-                                                   data-bs-target="#filter_params4">
-                                                <input type="radio" value="7 Вт" name="filter_params4"
-                                                       onchange="changeFilter('7 Вт', 'filter4')">
-                                                <span>7 Вт</span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <div class="accordion-collapse collapse catalog-page__filters__item__body"
+                                 id="filter_params2"
+                                 data-bs-parent="#accordionFilter">
+                                <ul class="nav">
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params2">
+                                            <input type="radio" value="Таблетка" name="filter_params2"
+                                                   onchange="changeFilter('GX53', 'filter2')">
+                                            <span>Таблетка</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params2">
+                                            <input type="radio" value="Таблетка2" name="filter_params2"
+                                                   onchange="changeFilter('GX532', 'filter2')">
+                                            <span>Таблетка2</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params2">
+                                            <input type="radio" value="Таблетка3" name="filter_params2"
+                                                   onchange="changeFilter('GX533', 'filter2')">
+                                            <span>Таблетка3</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params3">
+                                <div class="catalog-page__filters__item__header__mob-label">Цвет свечения 1</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter3"
+                                           placeholder="Цвет свечения"
+                                           value="">
+                                    <label for="filter3">Цвет свечения1</label>
                                 </div>
                             </div>
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params5">
-                                    <div class="catalog-page__filters__item__header__mob-label">Световой поток,Лм</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter5"
-                                               placeholder="Световой поток,Лм" value="">
-                                        <label for="filter5">Световой поток,Лм</label>
-                                    </div>
-                                </div>
-                                <div class="accordion-collapse collapse catalog-page__filters__item__body"
-                                     id="filter_params5"
-                                     data-bs-parent="#accordionFilter">
-                                    <div class="nav">
-                                        <div class="range-box">
-                                            <div class="js_range_filter "
-                                                 data-max="100"
-                                                 data-min="0"
-                                                 data-step="1"
-                                                 data-idmax="priceMax"
-                                                 data-idmin="priceMin"
-                                                 data-idfilter="filter5"
-                                            ></div>
-                                        </div>
-                                        <input type="hidden" name="priceMax" id="priceMax">
-                                        <input type="hidden" name="priceMin" id="priceMin">
-                                    </div>
+                            <div class="accordion-collapse collapse catalog-page__filters__item__body"
+                                 id="filter_params3"
+                                 data-bs-parent="#accordionFilter">
+                                <ul class="nav">
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn disabled">
+                                            <input disabled type="radio" value="Таблетка" name="filter_params3"
+                                                   onchange="changeFilter('Белый', 'filter3')">
+                                            <span>Белый</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params3">
+                                            <input type="radio" value="Таблетка3" name="filter_params3"
+                                                   onchange="changeFilter('Красный', 'filter3')">
+                                            <span>Красный</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params3">
+                                            <input type="radio" value="Таблетка3" name="filter_params3"
+                                                   onchange="changeFilter('Красный3', 'filter3')">
+                                            <span>Красный3</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params4">
+                                <div class="catalog-page__filters__item__header__mob-label">Цвет свечения</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter4"
+                                           placeholder="Мощность, Вт"
+                                           value="">
+                                    <label for="filter4">Мощность, Вт</label>
                                 </div>
                             </div>
-                            <div class="catalog-page__filters__item accordion-item">
-                                <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
-                                     data-bs-target="#filter_params6">
-                                    <div class="catalog-page__filters__item__header__mob-label">Диммируемая</div>
-                                    <div class="form-floating">
-                                        <input type="text" readonly class="form-control" id="filter6"
-                                               placeholder="Диммируемая"
-                                               value="">
-                                        <label for="filter6">Диммируемая</label>
-                                    </div>
+                            <div class="accordion-collapse collapse catalog-page__filters__item__body"
+                                 id="filter_params4"
+                                 data-bs-parent="#accordionFilter">
+                                <ul class="nav">
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params4">
+                                            <input type="radio" value="Таблетка" name="filter_params4"
+                                                   onchange="changeFilter('6 Вт', 'filter4')">
+                                            <span>6 Вт</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="catalog-page__filters__radio-btn" data-bs-toggle="collapse"
+                                               data-bs-target="#filter_params4">
+                                            <input type="radio" value="7 Вт" name="filter_params4"
+                                                   onchange="changeFilter('7 Вт', 'filter4')">
+                                            <span>7 Вт</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params5">
+                                <div class="catalog-page__filters__item__header__mob-label">Световой поток,Лм</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter5"
+                                           placeholder="Световой поток,Лм" value="">
+                                    <label for="filter5">Световой поток,Лм</label>
                                 </div>
-                                <div class="accordion-collapse collapse catalog-page__filters__item__body"
-                                     id="filter_params6"
-                                     data-bs-parent="#accordionFilter">
+                            </div>
+                            <div class="accordion-collapse collapse catalog-page__filters__item__body"
+                                 id="filter_params5"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="nav">
+                                    <div class="range-box">
+                                        <div class="js_range_filter "
+                                             data-max="100"
+                                             data-min="0"
+                                             data-step="1"
+                                             data-idmax="priceMax"
+                                             data-idmin="priceMin"
+                                             data-idfilter="filter5"
+                                        ></div>
+                                    </div>
+                                    <input type="hidden" name="priceMax" id="priceMax">
+                                    <input type="hidden" name="priceMin" id="priceMin">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog-page__filters__item accordion-item">
+                            <div class="catalog-page__filters__item__header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#filter_params6">
+                                <div class="catalog-page__filters__item__header__mob-label">Диммируемая</div>
+                                <div class="form-floating">
+                                    <input type="text" readonly class="form-control" id="filter6"
+                                           placeholder="Диммируемая"
+                                           value="">
+                                    <label for="filter6">Диммируемая</label>
+                                </div>
+                            </div>
+                            <div class="accordion-collapse collapse catalog-page__filters__item__body"
+                                 id="filter_params6"
+                                 data-bs-parent="#accordionFilter">
 
-                                </div>
                             </div>
                         </div>
-                        <div class="catalog-page__filters__footer">
-                            <!--a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Сбросить все
-                            </a-->
-                            <div class="catalog-page__filters__footer__mob-submit">
-                                <input type="submit" value="Применить" class="btn-submit">
-                            </div>
+                    </div>
+                    <div class="catalog-page__filters__footer">
+                        <!--a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Сбросить все
+                        </a-->
+                        <div class="catalog-page__filters__footer__mob-submit">
+                            <input type="submit" value="Применить" class="btn-submit">
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
-            <div class="catalog-page__filters-active">
-                <div id="filterSlider" class="swiper overflow-visible">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Сбросить все
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка2
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка3
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка2
-                            </a>
-                        </div>
-                        <div class="swiper-slide w-auto">
-                            <a href="" class="catalog-page__filters__clear">
-                                <svg width="14" height="14">
-                                    <use xlink:href="#svg-close"></use>
-                                </svg>
-                                Таблетка3
-                            </a>
-                        </div>
+        </div>
+        <div class="catalog-page__filters-active">
+            <div id="filterSlider" class="swiper overflow-visible">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Сбросить все
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка2
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка3
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка2
+                        </a>
+                    </div>
+                    <div class="swiper-slide w-auto">
+                        <a href="" class="catalog-page__filters__clear">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                            Таблетка3
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
 
     <div class="row catalog-page__body">

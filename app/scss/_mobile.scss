@@ -81,6 +81,7 @@
   }
   .page-wrap__404-img {
     margin: 0 0 30px;
+
     img {
       width: 250px;
       height: auto;
@@ -97,13 +98,14 @@
     margin-right: auto;
   }
   .сatalog-page__seo__img {
-    padding: 10px  50px 0;
+    padding: 10px 50px 0;
   }
   .product-page__images__list {
     gap: 0;
   }
   .section2__img {
     padding-top: 30px;
+
     img {
       width: 150px;
       height: auto;
@@ -133,6 +135,7 @@
     h2 {
       font-size: 18px;
     }
+
     p {
       font-size: 14px;
     }
@@ -147,6 +150,7 @@
   }
   .page-wrap__header {
     padding-bottom: 30px;
+
     h1 {
       font-size: 30px;
     }
@@ -261,27 +265,33 @@
 
     .section1__img1 {
       margin-top: 30px;
+
       img {
         width: 110px;
         height: auto;
       }
     }
+
     .section1__img2 {
       margin-top: 120px;
       margin-left: -75px;
+
       img {
         width: 60px;
         height: auto;
       }
     }
+
     .section1__img3 {
       margin-top: 220px;
       margin-left: -130px;
+
       img {
         width: 80px;
         height: auto;
       }
     }
+
     .section1__img4 {
       margin-top: 290px;
 
@@ -329,6 +339,7 @@
     padding-bottom: 30px;
     position: relative;
     z-index: 50;
+
     &::after {
       content: '';
       display: block;
@@ -354,6 +365,7 @@
   .panel.section2 .section2__params {
     font-size: 72px;
     margin-top: 8px;
+
     span {
       font-size: 40px;
     }
@@ -541,7 +553,8 @@
     display: block;
   }
   .catalog-page__filters-active {
-    padding-top: 10px;
+    padding-top: 0;
+
     .catalog-page__filters__clear {
       font-size: 14px;
       padding: 3px 10px;
@@ -689,6 +702,13 @@
     font-size: 24px;
     padding-bottom: 20px;
   }
+  .catalog-page__filter-box {
+    padding-bottom: 0;
+  }
+  .catalog-page__filters-active {
+    padding-bottom: 25px;
+  }
+
 }
 
 
@@ -741,6 +761,7 @@
   .partners {
     padding-top: 30px;
     padding-bottom: 70px;
+
     h2 {
       font-size: 30px;
       margin-bottom: 25px;
@@ -748,6 +769,7 @@
   }
   .page-bay {
     padding-top: 75px;
+
     h1 {
       font-size: 30px;
       margin-bottom: 15px;
@@ -781,13 +803,14 @@
   .form-box__item {
     padding-bottom: 20px;
   }
-  .form-box__body>div,
-  .form-box__footer > div{
+  .form-box__body > div,
+  .form-box__footer > div {
     padding-left: 8px;
     padding-right: 8px;
   }
   .form-box__footer {
     padding-top: 0;
+
     &__ps {
       padding-bottom: 20px;
     }
@@ -1008,15 +1031,18 @@
     padding-left: 25px;
     width: 100%;
     justify-content: space-between;
+
     span {
       font-size: 14px;
     }
   }
   .product-page__market__list {
     flex-wrap: wrap;
+
     li {
       width: calc(50% - 8px);
     }
+
     .product-page__market__list__shop {
       width: 100%;
     }
@@ -1027,10 +1053,12 @@
       line-height: 20px;
       margin-bottom: 16px;
     }
+
     ul {
       li {
         font-size: 14px;
         line-height: 20px;
+
         &::after {
           top: 7px;
         }
