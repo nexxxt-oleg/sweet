@@ -711,6 +711,14 @@
 
 }
 
+.catalog-page__filters__clear {
+  cursor: pointer;
+}
+.product-page__har__item__val {
+  display: flex;
+  align-items: flex-end;
+}
+
 
 @media screen and (max-width: 768px) {
   .section3__desc {
