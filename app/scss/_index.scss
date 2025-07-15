@@ -2517,3 +2517,10 @@ a:hover {
     }
   }
 }
+.catalog-page__filters__checkbox-btn span:after {
+  border: 1px solid #000;
+}
+.disabled span {
+  color: #6c7a89 !important;
+  cursor: not-allowed;
+}
