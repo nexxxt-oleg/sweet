@@ -551,6 +551,8 @@
   }
   .catalog-page__filters__list {
     display: block;
+    position: relative;
+    z-index: 1;
   }
   .catalog-page__filters-active {
     padding-top: 0;
@@ -593,10 +595,19 @@
   }
 
   .catalog-page__filters {
-    padding: 20px 12px;
-    height: calc(100vh - 100px);
+    padding: 20px 12px 100px;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .offcanvas-start.show .catalog-page__filters__footer {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   .catalog-page__filters__item {
     border-bottom: 1px solid #000;
@@ -638,7 +649,8 @@
     height: auto;
   }
   .catalog-page__filters__item__body {
-    position: relative;
+    position: relative !important;
+    z-index: 1;
     top: auto;
     left: auto;
     margin-top: 0;
@@ -818,7 +830,7 @@
     padding-top: 15px;
   }
   .form-box__item {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .form-box__body > div,
   .form-box__footer > div {
